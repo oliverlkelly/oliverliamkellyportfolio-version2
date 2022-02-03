@@ -15,8 +15,9 @@ html{
 }
 /* Keeps header at top of page at all times */
 header{
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
 }
 /* Navigational element styling for the blur and section height etc */
 nav{
@@ -73,11 +74,11 @@ nav ul li a:hover{
     cursor: pointer;
 }
 section{
-    height: calc(100vh - 6rem);
+    height: 100vh;
 }
 .contentSpace{
     display: flex;
-    margin: 2rem;
+    margin: 0 2rem;
     padding-top: 7rem;
 }
 .profileImage{
@@ -86,14 +87,18 @@ section{
     height: 25vw;
 }
 .aboutText{
+    display: flex;
     border-radius: 5rem;
     background: var(--highlightColor2);
+    padding: 2rem;
+    height: 90vh;
+}
+.aboutText p{
     text-align: center;
     justify-content: center;
-    padding: 5rem;
     font-size: 2.5rem;
     color: var(--mainColor);
-    margin-left: 1rem;
+    margin: 0 20rem;
 }
 .largeTile{
     display: flex;
@@ -123,4 +128,35 @@ section{
     transition: all 0.5s ease-in-out;
     background: var(--highlightColor);
     color: var(--mainColor);
+}
+
+@media all and (max-width: 1750px){
+    .aboutText{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media all and (max-width: 1270px){
+    .aboutText{
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutText p{
+        margin: 1rem;
+    }
+}
+@media all and (max-width: 600px){
+    .name{
+        font-size: 1.75rem;
+    }
+    
+    .aboutText{
+        flex-direction: column;
+        align-items: center;
+        height: 75vh;
+    }
+    .aboutText p{
+        margin: 1rem;
+        font-size: 1rem;
+    }
 }
