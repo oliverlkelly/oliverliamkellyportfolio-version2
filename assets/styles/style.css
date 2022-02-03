@@ -72,13 +72,14 @@ nav ul li a:hover{
     color: var(--highlightColor);
     cursor: pointer;
 }
-.about{
+.contentSpace{
     display: flex;
     margin: 2rem;
 }
 .profileImage{
     border-radius: 5rem;
-    width: 25%;
+    width: 25vw;
+    height: 25vw;
 }
 .aboutText{
     border-radius: 5rem;
@@ -90,57 +91,32 @@ nav ul li a:hover{
     color: var(--mainColor);
     margin-left: 1rem;
 }
-
-/* START Styling for the Projects section*/
-.feature-project-tile{
+.largeTile{
+    display: flex;
+    flex-direction: column;
     transition: all 1s ease-in-out;
-    width: 40vh;
-    height: 70vh;
-    background: var(--highlightColor);
+    width: 23vw;
+    height: 50vh;
+    margin: 1rem;
+    background: var(--highlightColor2);
     box-sizing: border-box;
     overflow: hidden;
     object-fit: cover;
-    border-radius: 5vw;
-}
-.project-tile{
-    width: 40vh;
-    height: 34vh;
-    box-sizing: border-box;
-    overflow: hidden;
-    border-radius: 5vw;
-    transition: all 1s ease-in-out;
-    background: var(--highlightColor2);
-}
-.minor-project-tile{
-    width: 40vh;
-    height: 15vh;
-    box-sizing: border-box;
-    overflow: hidden;
-    border-radius: 5vw;
-    transition: all 1s ease-in-out;
-    background: var(--highlightColor2);
-}
-/* Grid setup */
-.row-span-2{
-    grid-row: span 2;
-}
-.row-span-4{
-    grid-row: span 4;
-}
-.grid{
-    display: grid;
-    gap: 1vw;
-    grid-template-columns: repeat(3, 1fr);
+    border-radius: 5rem;
+    color: var(--highlightColor);
+    font-size: 3rem;
+    text-align: center;
 }
 
-.feature-project-tile:hover img{
-    transition: all 1s ease-in-out;
-    transform: scale(1.1);
-    opacity: 0.5;
+.tileLink{
+    background: var(--highlightColor);
+    color: var(--mainColor);
+    padding: 0.1rem;
+    border-radius: 5rem;
+    margin: 1rem;
 }
-
-.project-tile:hover,.minor-project-tile:hover{
+.largeTile:hover{
     transition: all 0.5s ease-in-out;
     background: var(--highlightColor);
+    color: var(--mainColor);
 }
-/* END Styling for the Projects section */
