@@ -24,7 +24,7 @@ This project can be used as a website. There are other components of the site th
 
 At smaller sizes, the navigation menu is removed from the top and replaced with a menu icon that can bring it on screen for use. The site also changes again at smaller still sizes to remove the heading and only leave my profile image remaining.
 
-![Alt text](./assets/images/portfoliositeimage.png?raw=true "Screenshot of my web page")
+![Alt text](./assets/images/porfoliositeimage.png?raw=true "Screenshot of my web page")
 
 ## Issues
 Admittedly, this site has its issues, after much troubleshooting I was unable to solve many issues arising from my Grid compnents overflowing the rest of the site. As I believe this will take too long to troubleshoot it may be pertinent to restart the site with a similar design and rebuild it piece by piece.
