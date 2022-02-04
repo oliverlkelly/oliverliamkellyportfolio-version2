@@ -104,6 +104,8 @@ section{
 .largeTile{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     transition: all 1s ease-in-out;
     width: 23vw;
     height: 50vh;
@@ -116,6 +118,11 @@ section{
     color: var(--highlightColor);
     font-size: 3rem;
     text-align: center;
+}
+.projectImage{
+    width: 75%;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
 }
 .tileLink{
     transition: all 0.5s ease-in-out;
@@ -133,8 +140,12 @@ section{
 .largeTile:hover{
     transition: all 0.5s ease-in-out;
     display: flex;
+    justify-content: start;
     background: var(--highlightColor);
     color: var(--mainColor);
+}
+.largeTile:hover > .projectImage{
+    display: none;
 }
 .tileLink:hover{
     transition: all 0.5s ease-in-out;
@@ -145,13 +156,12 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 75vw;
+    padding-top: 7rem;
 }
 .contacts{
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 90vw;
 }
 .contactTitle{
     font-size: 3rem;
@@ -179,7 +189,9 @@ section{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 2rem;
+}
+.links a{
+    margin: 2rem;
 }
 .contactTile{
     color: var(--highlightColor);
@@ -197,7 +209,6 @@ section{
     width: 20rem;
     align-items: center;
     border-radius: 1.5rem;
-    margin-top: 2rem;
 }
 .resumeIcon{
     font-size: 10rem;
